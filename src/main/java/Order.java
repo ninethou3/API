@@ -41,8 +41,6 @@ public class Order {
         return new Order(lastName, firstName, address, metroStation, phone, rentTime, deliveryDate,
                 comment, color);
     }
-
-
 }
 
 

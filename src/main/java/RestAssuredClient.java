@@ -5,10 +5,10 @@ import io.restassured.specification.RequestSpecification;
 
 public class RestAssuredClient {
     @Step("метод создающий базовую спецификацию")
-    public RequestSpecification getBaseSpec(){
+    public static RequestSpecification getBaseSpec(){
         return new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
-                .setBaseUri("http://qa-scooter.praktikum-services.ru/")
+                .setBaseUri("http://qa-scooter.praktikum-services.ru/api/v1")
                 .build();
     }
 }
